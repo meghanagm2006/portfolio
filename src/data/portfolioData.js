@@ -1,6 +1,6 @@
+
 // ============================================================
-//  EDIT THIS FILE to change anything on your website.
-//  You do not need to touch the components for normal updates.
+// EDIT THIS FILE to change anything on your website.
 // ============================================================
 
 export const personal = {
@@ -14,18 +14,20 @@ export const personal = {
   email: "meghanagm2006@gmail.com",
   phone: "9019944902",
   linkedin: "https://www.linkedin.com/in/meghana-g-m-8202ab343/",
-  // TODO: replace with your real GitHub link, e.g. "https://github.com/yourusername"
   github: "https://github.com/your-username",
   githubIsPlaceholder: true,
-  // Put your photo in the "public" folder and name it profile.jpg
-  photo: "/profile.jpg",
-  photoFallback: "/profile-placeholder.svg",
-  // Put your resume in the "public" folder and name it exactly like this
-  resume: "/Meghana_G_M_Resume.pdf",
+
+  // GitHub Pages compatible file paths
+  photo: `${import.meta.env.BASE_URL}profile.jpg`,
+  photoFallback: `${import.meta.env.BASE_URL}profile-placeholder.svg`,
+  resume: `${import.meta.env.BASE_URL}Meghana_G_M_Resume.pdf`,
+
   introduction:
     "Hello! I'm Meghana G M, a third-year Information Science and Engineering student at Atria Institute of Technology, Bengaluru. I am passionate about programming, technology and developing creative solutions. I enjoy learning new technologies, improving my technical skills and building projects.",
+
   about:
     "I am Meghana G M, a third-year Information Science and Engineering student at Atria Institute of Technology, Bengaluru. I am passionate about technology, programming and continuous learning. I enjoy exploring new technologies, solving problems and developing my technical knowledge. I believe in improving myself through practical learning, teamwork and real-world projects.",
+
   roles: [
     "Information Science Engineering Student",
     "Aspiring Software Developer",
@@ -75,7 +77,6 @@ export const education = [
   },
 ];
 
-// "icon" names are mapped to real icons inside Skills.jsx
 export const skills = {
   technical: [
     { name: "C Programming", level: "Basic", icon: "c" },
@@ -87,12 +88,14 @@ export const skills = {
     { name: "React", level: "Learning", icon: "react" },
     { name: "MySQL", level: "Basic", icon: "db" },
   ],
+
   tools: [
     { name: "MS Word", icon: "word" },
     { name: "MS PowerPoint", icon: "ppt" },
     { name: "Visual Studio Code", icon: "code" },
     { name: "Git and GitHub", icon: "git" },
   ],
+
   soft: [
     { name: "Communication Skills", icon: "chat" },
     { name: "Team Collaboration", icon: "team" },
@@ -125,8 +128,6 @@ export const experience = [
   },
 ];
 
-// Edit the placeholders below once you have the real details.
-// Leave "liveLink" or "codeLink" as "" and the button will show as "Coming soon".
 export const projects = [
   {
     title: "Manoshakthi",
@@ -170,8 +171,6 @@ export const projects = [
   },
 ];
 
-// Replace the placeholders with real certificates when you have them.
-// Put certificate images/PDFs in public/certificates/ and set file: "/certificates/name.pdf"
 export const certifications = [
   {
     title: "Certificate Title (add yours)",
@@ -193,10 +192,6 @@ export const certifications = [
   },
 ];
 
-// Contact form setup:
-// Leave "" to open the visitor's email app with the message filled in (works with no backend).
-// To receive messages directly, create a free form at https://formspree.io and paste its URL here,
-// for example "https://formspree.io/f/xxxxxxx".
 export const contactForm = {
   formspreeUrl: "",
 };
